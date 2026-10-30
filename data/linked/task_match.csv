@@ -1,0 +1,73 @@
+synchro_task,name_nl,eventlog_start,eventlog_finish,schedule_uid,schedule_start,schedule_finish,matched_by
+ST00060,Stellen bruggetjes,2015-02-26,2015-02-27,16,2015-02-26,2015-02-27,name and dates
+ST00070,Nuts invoeren,2015-03-02,2015-03-04,17,2015-03-02,2015-03-04,name and dates
+ST00080,Werkvloer liftput,2015-03-03,2015-03-03,18,2015-03-03,2015-03-03,name and dates
+ST00090,Wapening liftvloer,2015-03-04,2015-03-04,19,2015-03-04,2015-03-04,name and dates
+ST00100,Bekisten liftvloer,2015-03-04,2015-03-04,20,2015-03-04,2015-03-04,name and dates
+ST00110,Stort liftvloer,2015-03-05,2015-03-05,21,2015-03-05,2015-03-05,name and dates
+ST00130,Bekisten liftwanden,2015-03-06,2015-03-06,23,2015-03-06,2015-03-06,name and dates
+ST00140,Wapening liftwanden,2015-03-09,2015-03-09,24,2015-03-09,2015-03-09,name and dates
+ST00150,Stort liftwanden,2015-03-10,2015-03-10,25,2015-03-10,2015-03-10,name and dates
+ST00200,Stellen funderingkist incl. poeren,2015-03-12,2015-03-20,30,2015-03-12,2015-03-20,name and dates
+ST00210,Wapening,2015-03-19,2015-03-24,31,2015-03-19,2015-03-24,name and dates
+ST00230,Stort,2015-03-25,2015-03-25,33,2015-03-25,2015-03-25,name and dates
+ST00250,Opstorten fundering,2015-03-26,2015-04-02,35,2015-03-26,2015-04-02,name and dates
+ST00310,Stelwerk metselwerk onder peil,2015-04-07,2015-04-07,41,2015-04-07,2015-04-07,name and dates
+ST00320,Metselwerk onderpeil (buitenblad),2015-04-08,2015-04-14,42,2015-04-08,2015-04-14,name and dates
+ST00350,Kanaalplaatvloer leggen (lev. week 16),2015-04-13,2015-04-13,45,2015-04-13,2015-04-13,name and dates
+ST00370,Afstorten kanaalplaat,2015-04-16,2015-04-16,47,2015-04-16,2015-04-16,name and dates
+ST00420,Plaatsen stalen kolommen,2015-04-20,2015-04-20,55,2015-04-20,2015-04-20,name and dates
+ST00430,Prefab trappen en bordes,2015-05-21,2015-05-21,56,2015-05-21,2015-05-21,name and dates
+ST00440,Prefab trappen en bordes,2015-06-17,2015-06-17,57,2015-06-17,2015-06-17,name and dates
+ST00460,Stelwerk kalkzandsteen,2015-04-21,2015-04-21,60,2015-04-21,2015-04-21,name and dates
+ST00470,Stelwerk kalkzandsteen,2015-05-22,2015-05-22,61,2015-05-22,2015-05-22,name and dates
+ST00480,Stelwerk kalkzandsteen,2015-06-18,2015-06-18,63,2015-06-18,2015-06-18,name and dates
+ST00490,Lijmwerk kalkzandsteen elementen,2015-04-22,2015-04-24,65,2015-04-22,2015-04-24,name and dates
+ST00500,Lijmwerk kalkzandsteen elementen,2015-05-26,2015-05-28,66,2015-05-26,2015-05-28,name and dates
+ST00510,Lijmwerk kalkzandsteen elementen,2015-06-19,2015-06-23,68,2015-06-19,2015-06-23,name and dates
+ST00540,Opstellen,2015-05-29,2015-06-02,72,2015-05-29,2015-06-02,name and dates
+ST00550,Opstellen,2015-06-24,2015-06-26,74,2015-06-24,2015-06-26,name and dates
+ST00560,Leggen breedplaat incl. Veiligheid,2015-05-01,2015-05-04,76,2015-05-01,2015-05-06,"name, nearest date"
+ST00570,Leggen breedplaat incl. Veiligheid,2015-06-03,2015-06-04,77,2015-06-03,2015-06-04,name and dates
+ST00580,Leggen breedplaat incl. Veiligheid,2015-06-29,2015-06-30,79,2015-06-29,2015-06-30,name and dates
+ST00600,Randkist,2015-05-07,2015-05-08,82,2015-05-07,2015-05-08,name and dates
+ST00610,Randkist,2015-06-05,2015-06-08,83,2015-06-05,2015-06-08,name and dates
+ST00620,Randkist,2015-07-01,2015-07-02,85,2015-07-01,2015-07-02,name and dates
+ST00630,Stalen balken,2015-05-11,2015-05-11,87,2015-05-11,2015-05-11,name and dates
+ST00660,Installateurs,2015-05-07,2015-05-12,92,2015-05-07,2015-05-12,name and dates
+ST00670,Installateurs,2015-06-05,2015-06-10,93,2015-06-05,2015-06-10,name and dates
+ST00680,Installateurs,2015-07-01,2015-07-06,95,2015-07-01,2015-07-06,name and dates
+ST00690,Wapening,2015-05-13,2015-05-14,97,2015-05-13,2015-05-18,"name, nearest date"
+ST00700,Wapening,2015-06-11,2015-06-12,98,2015-06-11,2015-06-12,name and dates
+ST00710,Wapening,2015-07-07,2015-07-08,100,2015-07-07,2015-07-08,name and dates
+ST00730,Stort,2015-05-19,2015-05-19,103,2015-05-19,2015-05-19,name and dates
+ST00740,Stort,2015-06-15,2015-06-15,104,2015-06-15,2015-06-15,name and dates
+ST00750,Stort,2015-07-09,2015-07-09,106,2015-07-09,2015-07-09,name and dates
+ST00790,Staalconstuctie dak,2015-07-13,2015-07-16,111,2015-07-13,2015-07-16,name and dates
+ST00800,Stelwerk /lijmwerk lift,2015-07-15,2015-07-16,112,2015-07-15,2015-07-16,name and dates
+ST00820,Prefab trappen en bordes 2e verd.,2015-07-13,2015-07-13,114,2015-07-13,2015-07-13,name and dates
+ST00840,Opstellen,2015-07-16,2015-07-20,116,2015-07-16,2015-07-20,name and dates
+ST00850,Leggen breedplaat incl. Veiligheid,2015-07-20,2015-07-21,117,2015-07-20,2015-07-21,name and dates
+ST00870,Randkist,2015-07-22,2015-07-23,119,2015-07-22,2015-07-23,name and dates
+ST00880,Installateurs,2015-07-22,2015-07-27,120,2015-07-22,2015-08-17,"name, nearest date"
+ST00890,Wapening,2015-08-18,2015-08-19,121,2015-08-18,2015-08-19,name and dates
+ST00910,Stort,2015-08-20,2015-08-20,123,2015-08-20,2015-08-20,name and dates
+ST00940,Stelwerk buitengevel,2015-06-16,2015-06-22,126,2015-06-16,2015-06-22,name and dates
+ST00950,Stelwerk buitengevel,2015-07-02,2015-07-08,128,2015-07-02,2015-07-08,name and dates
+ST00970,Plaatsen kozijnen,2015-06-18,2015-06-24,132,2015-06-18,2015-06-24,name and dates
+ST00980,Plaatsen kozijnen,2015-07-06,2015-07-10,133,2015-07-06,2015-07-10,name and dates
+ST00990,Plaatsen kozijnen,2015-07-20,2015-07-24,135,2015-07-20,2015-07-24,name and dates
+ST01000,Prefab betonband,2015-08-17,2015-08-18,137,2015-08-17,2015-08-18,name and dates
+ST01050,Metselwerk,2015-06-25,2015-07-08,144,2015-06-25,2015-07-08,name and dates
+ST01060,Metselwerk,2015-07-09,2015-07-21,145,2015-07-09,2015-07-21,name and dates
+ST01070,Metselwerk,2015-07-22,2015-08-04,147,2015-07-22,2015-08-25,"name, nearest date"
+ST01120,Plaatsen scharnierkap incl. goot en platte daken,2015-07-16,2015-08-06,155,2015-07-16,2015-08-27,"name, nearest date"
+ST01130,Plaatsen scharnierkap incl. goot en platte daken,2015-08-28,2015-09-17,157,2015-08-28,2015-09-18,"name, nearest date"
+ST01150,Zinken bekleding dakkapelen,2015-08-28,2015-09-03,160,2015-08-28,2015-09-03,name and dates
+ST01160,Zinken bekleding dakkapelen,2015-09-21,2015-10-02,161,2015-09-21,2015-10-02,name and dates
+ST01170,Dakramen,2015-08-28,2015-09-03,163,2015-08-28,2015-09-03,name and dates
+ST01200,Dakbedekking platte daken,2015-08-28,2015-09-03,167,2015-08-28,2015-09-03,name and dates
+ST01210,Dakbedekking platte daken,2015-09-18,2015-10-01,169,2015-09-21,2015-10-02,"name, nearest date"
+ST01220,Dakpannen,2015-09-04,2015-09-17,172,2015-09-04,2015-09-18,"name, nearest date"
+ST01230,Dakpannen,2015-09-29,2015-10-12,173,2015-09-29,2015-10-12,name and dates
+ST01250,Zink goot,2015-10-09,2015-10-15,176,2015-10-09,2015-10-15,name and dates

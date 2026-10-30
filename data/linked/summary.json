@@ -1,0 +1,81 @@
+{
+  "source": {
+    "repository": "buildingsmart-community/Community-Sample-Test-Files",
+    "commit": "ca3a8e2b94ef79f1a8b28ca0863a7477fb1dd92d",
+    "files": {
+      "schedule": "Planning/XML/Uitvoering Schependomlaan 18-02-2015.xml",
+      "eventlog": "Event log/Eventlog with As Built information/Schependomlaan eventlog as planned data incl as built data.csv",
+      "eventlog_planned": "Event log/Eventlog As Planned/eventlog IFC schependomlaan.csv"
+    }
+  },
+  "schedule": {
+    "tasks": 157,
+    "leaf_tasks": 157,
+    "start": "2015-02-19",
+    "finish": "2015-12-17"
+  },
+  "elements": 3505,
+  "elements_with_tasks": 2358,
+  "element_task_links": 3661,
+  "as_built": {
+    "on_time": 3467,
+    "late": 194
+  },
+  "late_by_task": [
+    [
+      "ST01060 Metselwerk",
+      60
+    ],
+    [
+      "ST00950 Stelwerk buitengevel",
+      50
+    ],
+    [
+      "ST00980 Plaatsen kozijnen",
+      50
+    ],
+    [
+      "ST01070 Metselwerk",
+      13
+    ],
+    [
+      "ST01000 Prefab betonband",
+      10
+    ],
+    [
+      "ST00970 Plaatsen kozijnen",
+      7
+    ],
+    [
+      "ST00510 Lijmwerk kalkzandsteen elementen",
+      2
+    ],
+    [
+      "ST01130 Plaatsen scharnierkap incl. goot en platte daken",
+      2
+    ]
+  ],
+  "eventlog_tasks": 72,
+  "task_matching": {
+    "name and dates": 64,
+    "name, nearest date": 8
+  },
+  "ifc_classes": {
+    "IfcCovering": 1214,
+    "IfcWall": 765,
+    "IfcSlab": 279,
+    "IfcBuildingElementPart": 265,
+    "IfcWindow": 259,
+    "IfcDoor": 205,
+    "IfcBeam": 174,
+    "IfcWallStandardCase": 115,
+    "IfcRailing": 90,
+    "IfcPipe Segment": 60,
+    "IfcColumn": 23,
+    "IfcBuildingElementProxy": 14,
+    "IfcBuilding Element Proxy": 12,
+    "Ifc": 12,
+    "IfcStair": 9,
+    "IfcMember": 9
+  }
+}

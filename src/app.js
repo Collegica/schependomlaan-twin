@@ -46,4 +46,4 @@ class Tally extends CollegicaApp {
   }
 }
 
-customElements.define('app-template', Tally);
+customElements.define('schependomlaan-twin', Tally);

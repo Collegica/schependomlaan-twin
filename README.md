@@ -1,4 +1,4 @@
-# App template
+# Schependomlaan Twin
 
 The starting point for every [Collegica](https://www.collegica.org) app: a
 small tool that runs in a browser tab, on its own or inside a page on
