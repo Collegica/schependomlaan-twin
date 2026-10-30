@@ -1,0 +1,29 @@
+code,label_nl,label_en
+0000,nulpunt,datum point
+1320,vloeren op grondslag - constructief,ground-bearing floors - structural
+1610,funderingsconstructies - voeten en balken,foundations - footings and beams
+2110,buitenwanden - niet constructief,external walls - non-structural
+2120,buitenwanden - constructief,external walls - structural
+2210,binnenwanden - niet constructief,internal walls - non-structural
+2220,binnenwanden - constructief,internal walls - structural
+2310,vloeren - niet constructief,floors - non-structural
+2320,vloeren - constructief,floors - structural
+2410,trappen en hellingen - trappen,stairs and ramps - stairs
+2710,daken - niet constructief,roofs - non-structural
+2810,hoofddraagconstructies,main load-bearing structure (beams)
+3120,buitenwandopeningen,external wall openings (windows and frames)
+3130,buitenwandopeningen - gevuld met deuren,external wall openings - doors
+3230,binnenwandopeningen - gevuld met deuren,internal wall openings - doors
+3410,balustrades en leuningen - balustrades,balustrades and handrails
+3720,dakopeningen - gevuld,roof openings - filled
+4110,buitenwandafwerkingen,external wall finishes
+4210,binnenwandafwerkingen,internal wall finishes
+4320,vloerafwerkingen - niet verhoogd,floor finishes - not raised
+4510,plafondafwerkingen - verlaagd,ceiling finishes - suspended
+4520,plafondafwerkingen - niet verlaagd,ceiling finishes - not suspended
+4710,dakafwerkingen - afwerkingen,roof finishes
+4720,dakafwerkingen - bekledingen,roof coverings
+5210,afvoeren - regenwater,drainage - rainwater
+5700,luchtbehandeling,ventilation
+6400,communicatie,communications
+6610,transport - liften,transport - lifts

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "license": "MIT",
-  "description": "The starting point for every Collegica app: a web component, a standalone page, offline support and the embedding contract, with no dependencies.",
+  "description": "A replayable digital twin of the Schependomlaan housing project (Nijmegen, 2015), from its open BIM dataset. Runs in the browser; no dependencies.",
   "scripts": {
     "start": "node scripts/serve.mjs",
     "test": "node --test",

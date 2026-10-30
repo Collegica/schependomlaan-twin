@@ -1,27 +1,55 @@
 # Schependomlaan Twin
 
-The starting point for every [Collegica](https://www.collegica.org) app: a
-small tool that runs in a browser tab, on its own or inside a page on
-collegica.org, with nothing uploaded.
+Replay the construction of a real building, element by element. Schependomlaan
+is a housing project in Nijmegen, the Netherlands, built in 2015 and
+documented as an open dataset by TU Eindhoven with the contractor and its
+partners. This app joins three parts of that dataset:
 
-The example app is a tally that remembers its count. Replace it with yours.
+- the contractor's **as-planned 3D model** (IFC), 3,505 elements;
+- the **schedule** and the **event log** that link 2,358 elements to the
+  tasks that built them, with planned dates;
+- the **as-built check**: for each element and task, on time or late
+  (3,467 on time, 194 late).
 
-## Start an app
+Drag the timeline through 2015 and the building assembles itself: work under
+way in amber, finished work in teal, work the as-built check flagged late in
+red. Click an element for its tasks; pick a late task to see where it ran late.
 
-1. On GitHub, **Use this template** → create `Collegica/<slug>` (or your own
-   copy under your account).
-2. Rename it, once:
+It's a replay, not a live twin: a twin in the strict sense stays in sync with
+the building through live data. This is the record of one, which is where a
+construction company's own twin starts.
 
-   ```bash
-   npm run rename -- my-app "My App"
-   ```
+## The data
 
-   The slug is the app's name everywhere: the custom element `<my-app>`, the
-   path `/apps/my-app/` on collegica.org, the storage prefix
-   `collegica:my-app:` and the release file `my-app-web.tar.gz`. It must
-   contain a hyphen, because custom element names do.
-3. Write the app in `src/app.js`, and fill in `app.json`: the description, and
-   the privacy line that tells people where their data goes.
+| Folder | What it is | Made by |
+|---|---|---|
+| `data/linked/` | The linked tables: `tasks.csv`, `elements.csv`, `element_tasks.csv`, `task_match.csv`, `summary.json` | `python3 data/build.py` |
+| `data/glossary-*.csv` | English names for the Dutch task names and NL-SfB building codes (Collegica's translation, not reviewed by the project team) | by hand |
+| `model/model.bin`, `model/model.json` | The planned model's geometry, packed for the web: quantised positions, an element index per vertex, triangle indices; per element its IFC GUID and colour | `python3 data/geometry.py <glb>` |
+| `model/twin.json` | Per element, in the geometry's order: type, building code, material, and its tasks with planned dates and as-built status | `python3 data/twin.py` |
+
+The source is pinned to one commit of buildingSMART's
+[Community-Sample-Test-Files](https://github.com/buildingsmart-community/Community-Sample-Test-Files)
+(`IFC 2.3.0.1 (IFC 2x3)/Schependomlaan`). The geometry comes from
+`IFC Schependomlaan incl planningsdata.ifc`, converted with IfcOpenShell's
+IfcConvert 0.9.0 (`--use-element-guids`); its element GUIDs match the event
+log (2,358 of 2,359), the design model's do not. The event log's 72 tasks
+match the schedule's 157 by name and dates (64) or by name with moved dates
+(8); `task_match.csv` records which.
+
+Everything in `data/` and `model/` is standard-library Python; the viewer
+(`src/viewer.js`) is plain WebGL2. No dependencies.
+
+## Credits and licence
+
+The Schependomlaan dataset was gathered for Stijn van Schaijk's master's
+thesis at the Information Systems for the Built Environment group, TU
+Eindhoven, with Hendriks Bouw en Ontwikkeling, ROOT, TNO and RAAMAC. The
+repository it is published in is licensed CC BY 4.0; the dataset's README
+says its owners gave permission for scientific and academic use.
+**Publication of the derived data here is pending the owners' reply.**
+
+Collegica's code is MIT. See [`LICENSE`](LICENSE).
 
 ## Run and test
 
@@ -29,46 +57,6 @@ Node 22, nothing to install.
 
 ```bash
 npm start          # http://localhost:8000/
-npm test           # the embedding contract and the unit tests
-npm run build      # dist/<slug>-web.tar.gz
+npm test           # the embedding contract, and the timeline against the data
+npm run build      # dist/schependomlaan-twin-web.tar.gz
 ```
-
-## How it fits on collegica.org
-
-The site's `website/apps.yml` pins each app's release. On every deploy the
-site downloads that release and unpacks it into `/apps/<slug>/app/`:
-
-| Address | What it is |
-|---|---|
-| `/apps/<slug>/` | A page on the site: navigation, the article around the app, and the app itself placed as `<slug>` from `app/src/app.js` |
-| `/apps/<slug>/app/` | This repository's `index.html`: the app full-screen, which is what installs to a phone's home screen and works offline |
-
-The app inherits the site's colours and dark mode through the `--cg-*` CSS
-custom properties; standalone, `src/tokens.css` supplies the same ones.
-
-## The contract
-
-`npm test` checks that the app keeps to the rules that let many apps share one
-site: its element is named for its slug, its paths are relative, it talks to
-no other site unless `app.json` declares it, it stores data only under its own
-name, and it adds no page-wide keyboard, wheel or touch handlers. The details,
-and how to work in this repository with a coding assistant, are in
-[`AGENTS.md`](AGENTS.md).
-
-## Release
-
-Publish a GitHub release tagged `vMAJOR.MINOR.PATCH`. The release workflow
-tests, builds and attaches `<slug>-web.tar.gz`. It goes live on collegica.org
-when the site pins the new tag.
-
-## Known gaps
-
-- **iPhone home-screen icon.** iOS ignores SVG icons in the manifest. Add a
-  180 × 180 PNG and `<link rel="apple-touch-icon" href="icon-180.png">` to
-  `index.html` (and to `BUNDLE` in `scripts/bundle.mjs`).
-- **No browser tests yet.** The contract is checked by reading the files;
-  nothing yet clicks through the app in a real browser in CI.
-
-## License
-
-MIT. See [`LICENSE`](LICENSE).
