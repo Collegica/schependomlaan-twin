@@ -42,14 +42,28 @@ Everything in `data/` and `model/` is standard-library Python; the viewer
 
 ## Credits and licence
 
-The Schependomlaan dataset was gathered for Stijn van Schaijk's master's
-thesis at the Information Systems for the Built Environment group, TU
-Eindhoven, with Hendriks Bouw en Ontwikkeling, ROOT, TNO and RAAMAC. The
-repository it is published in is licensed CC BY 4.0; the dataset's README
-says its owners gave permission for scientific and academic use.
-**Publication of the derived data here is pending the owners' reply.**
+**The data** is derived from the *Schependomlaan* dataset, gathered for Stijn
+van Schaijk's master's thesis at the Information Systems for the Built
+Environment group, TU Eindhoven, with Hendriks Bouw en Ontwikkeling, ROOT, TNO
+and RAAMAC, and published in buildingSMART's
+[Community-Sample-Test-Files](https://github.com/buildingsmart-community/Community-Sample-Test-Files)
+(folder `IFC 2.3.0.1 (IFC 2x3)/Schependomlaan`) under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+The dataset's own README adds that its owners gave permission for
+scientific and academic use.
 
-Collegica's code is MIT. See [`LICENSE`](LICENSE).
+**What we changed:** the as-planned model converted to glTF and re-packed
+for the web (`model/`); the schedule, event log and scan comparisons joined
+into tables (`data/linked/`); Dutch task names and NL-SfB labels translated
+into English (`data/glossary-*.csv`); the records restated as notebook
+sources, without the coordination comments' authors, and a notebook written
+from them by an AI assistant (`notebook/`). Everything in `data/`, `model/`
+and `notebook/` is released under CC BY 4.0, crediting the people and
+organisations above. If you are one of them and want something corrected or
+removed, please open an issue.
+
+**Our code** (`src/`, `scripts/`, the `.py` files in `data/`) is MIT. See
+[`LICENSE`](LICENSE).
 
 ## Run and test
 
