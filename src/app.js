@@ -86,8 +86,9 @@ class SchependomlaanTwin extends CollegicaApp {
       </div>
       <p class="muted fine">Data: the Schependomlaan dataset (TU Eindhoven, Stijn van Schaijk, with Hendriks Bouw en
       Ontwikkeling, ROOT, TNO and RAAMAC), from buildingSMART's
-      <a href="https://github.com/buildingsmart-community/Community-Sample-Test-Files">Community Sample Test Files</a>.
-      Task names translated from Dutch by Collegica. The model shows planned dates; the dataset records whether
+      <a href="https://github.com/buildingsmart-community/Community-Sample-Test-Files">Community Sample Test Files</a>,
+      under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; converted, linked and translated from
+      Dutch by Collegica. The model shows planned dates; the dataset records whether
       work was late, not by how much.</p>`;
 
     const $ = s => this.root.querySelector(s);
